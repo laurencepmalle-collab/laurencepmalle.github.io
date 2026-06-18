@@ -152,6 +152,11 @@ section{padding:5rem 4rem}
 .port-body p{font-size:.78rem;color:var(--muted);line-height:1.6;margin-bottom:.9rem}
 .port-meta{display:flex;flex-wrap:wrap;gap:.4rem}
 .port-meta span{font-size:.65rem;font-weight:500;padding:.18rem .55rem;border-radius:4px;background:var(--soft);border:1px solid var(--rule);color:var(--muted)}
+.port-view-btn{display:inline-flex;align-items:center;gap:.4rem;margin-top:1rem;font-size:.78rem;font-weight:600;color:var(--white);background:var(--blue);border:none;border-radius:6px;padding:.5rem 1rem;text-decoration:none;transition:background .2s}
+.port-view-btn:hover{background:var(--blue2)}
+.port-view-btn.secondary{background:var(--soft);color:var(--blue);border:1px solid var(--rule);margin-left:.5rem}
+.port-view-btn.secondary:hover{background:var(--light)}
+.port-view-row{display:flex;flex-wrap:wrap;gap:0}
 
 .experience-section{background:var(--white)}
 .timeline{display:flex;flex-direction:column;gap:0}
@@ -495,7 +500,7 @@ footer{background:var(--navy);padding:1.8rem 4rem;display:flex;align-items:cente
 
     <div class="portfolio-note reveal">
       <span>ℹ️</span>
-      <p><strong>Real Experience</strong> items reflect actual work I completed (school projects, employment). <strong>Practice Project</strong> items are self-directed exercises I built by researching common real-world business needs — designed to demonstrate how I'd approach the real thing.</p>
+      <p><strong>Real Experience</strong> items reflect actual work I completed (school projects, employment). <strong>Practice Project</strong> items are self-directed exercises I built by researching common real-world business needs — designed to demonstrate how I'd approach the real thing. Click "View Full Project" on any card to open the real, live file in Google Drive (view-only).</p>
     </div>
 
     <div class="portfolio-grid">
@@ -506,6 +511,7 @@ footer{background:var(--navy);padding:1.8rem 4rem;display:flex;align-items:cente
           <h3>500-Record Customer Database</h3>
           <p>A structured Excel/Sheets customer database with 500 rows of data, built and verified using a two-pass workflow checking for blank fields, duplicate IDs, and formatting consistency. Includes a summary dashboard sheet.</p>
           <div class="port-meta"><span>Excel / Sheets</span><span>500 Records</span><span>Two-Pass Verification</span><span>99%+ Accuracy</span></div>
+          <a href="https://drive.google.com/file/d/1IrmKErjKeCwgFkHarmLRqvzRLtHg1EJL/view?usp=sharing" target="_blank" class="port-view-btn">View Full Project →</a>
         </div>
       </div>
 
@@ -515,6 +521,7 @@ footer{background:var(--navy);padding:1.8rem 4rem;display:flex;align-items:cente
           <h3>Monthly Bookkeeping Ledger</h3>
           <p>A monthly bookkeeping file tracking 50+ transactions across 9 expense categories, with income/expense entries cross-checked against source documents to keep reconciliation errors at zero.</p>
           <div class="port-meta"><span>Excel / Sheets</span><span>50+ Transactions</span><span>9 Categories</span><span>Zero Errors</span></div>
+          <a href="https://drive.google.com/file/d/1TTy7e8Wam0tlELj3dBnq5VT5dgeffErP/view?usp=sharing" target="_blank" class="port-view-btn">View Full Project →</a>
         </div>
       </div>
 
@@ -524,6 +531,7 @@ footer{background:var(--navy);padding:1.8rem 4rem;display:flex;align-items:cente
           <h3>Calendar Management System</h3>
           <p>A multi-tab calendar coordination system covering weekly scheduling, a reschedule log, a reminder tracker, and written process notes — modeling how I'd manage a busy professional's schedule.</p>
           <div class="port-meta"><span>Google Sheets</span><span>4 Tabs</span><span>Reschedule Log</span><span>Process Notes</span></div>
+          <a href="https://drive.google.com/file/d/157nkagE4f3OJSiEQ6uVfUDwIGriDOnuN/view?usp=sharing" target="_blank" class="port-view-btn">View Full Project →</a>
         </div>
       </div>
 
@@ -533,6 +541,10 @@ footer{background:var(--navy);padding:1.8rem 4rem;display:flex;align-items:cente
           <h3>Airbnb VA Management System</h3>
           <p>Researched common challenges Airbnb hosts face, then built a full sample VA system for a fictional 5-property portfolio: booking calendar, dynamic pricing tracker, occupancy &amp; revenue dashboards, a 6-touchpoint guest messaging sequence, and a monthly report template.</p>
           <div class="port-meta"><span>Excel</span><span>8 Sheets</span><span>Guest Messaging System</span><span>Sample Data</span></div>
+          <div class="port-view-row">
+            <a href="https://drive.google.com/file/d/1rHywY7wSiYxAyRbEyD-wvxDVQM-SvhjH/view?usp=sharing" target="_blank" class="port-view-btn">View Case Study →</a>
+            <a href="https://drive.google.com/file/d/1bV3MBy5ycpXUngInHdJKbCaqF9aPa_dc/view?usp=sharing" target="_blank" class="port-view-btn secondary">Guest Templates →</a>
+          </div>
         </div>
       </div>
 
@@ -542,6 +554,7 @@ footer{background:var(--navy);padding:1.8rem 4rem;display:flex;align-items:cente
           <h3>Google Workspace Onboarding Packet</h3>
           <p>A team onboarding template covering account setup, security steps, a tools reference table, a Day 1 checklist, and a weekly schedule template — built to show how I'd document a process for a new hire.</p>
           <div class="port-meta"><span>Google Docs / Word</span><span>5 Sections</span><span>Checklist Format</span></div>
+          <a href="https://drive.google.com/file/d/1HHhYZIi1n2FUsNs-DYo9nIgmimoYaJiN/view?usp=sharing" target="_blank" class="port-view-btn">View Full Project →</a>
         </div>
       </div>
 
@@ -551,6 +564,7 @@ footer{background:var(--navy);padding:1.8rem 4rem;display:flex;align-items:cente
           <h3>Product Database (50 SKUs)</h3>
           <p>Researched common e-commerce product data management needs, then built a structured 50-SKU product database with consistent fields and encoding templates — applicable to Amazon, Shopify, or general inventory contexts.</p>
           <div class="port-meta"><span>Excel</span><span>50 SKUs</span><span>Standardized Fields</span></div>
+          <a href="https://drive.google.com/file/d/1SLijI7pvRBAMMgp45O3hcpxjzkDOgcfk/view?usp=sharing" target="_blank" class="port-view-btn">View Full Project →</a>
         </div>
       </div>
 
@@ -560,6 +574,7 @@ footer{background:var(--navy);padding:1.8rem 4rem;display:flex;align-items:cente
           <h3>Freelance Earnings Tracker</h3>
           <p>A sample freelance income tracker modeled on common freelancer needs — tracking client, project, hours, rate, and payment status in one organized sheet.</p>
           <div class="port-meta"><span>Excel</span><span>Client Tracking</span><span>Payment Status</span></div>
+          <a href="https://drive.google.com/file/d/1afAWhGCZ07irhZCedCMJKvOzXmrcTJXB/view?usp=sharing" target="_blank" class="port-view-btn">View Full Project →</a>
         </div>
       </div>
 
@@ -569,6 +584,7 @@ footer{background:var(--navy);padding:1.8rem 4rem;display:flex;align-items:cente
           <h3>Netflix Subscription Tracker</h3>
           <p>Researched common subscription management challenges, then built a sample tracking system for monitoring subscription status, renewal dates, shared accounts, and payment tracking.</p>
           <div class="port-meta"><span>Excel / Sheets</span><span>Subscription Tracking</span><span>Renewal Dates</span></div>
+          <a href="https://drive.google.com/file/d/1GD3dHKB6benSyMyU24xu-zPbWY6C_0IY/view?usp=sharing" target="_blank" class="port-view-btn">View Full Project →</a>
         </div>
       </div>
 
@@ -578,6 +594,7 @@ footer{background:var(--navy);padding:1.8rem 4rem;display:flex;align-items:cente
           <h3>Shopify P&amp;L Report</h3>
           <p>Researched common Shopify seller reporting needs, then built a sample profit and loss report template covering revenue, cost of goods, fees, and net profit calculations.</p>
           <div class="port-meta"><span>Excel</span><span>P&amp;L Reporting</span><span>E-commerce</span></div>
+          <a href="https://drive.google.com/file/d/1K0XIU-vbz70HrTMqCQglF8RpYA2tc2uL/view?usp=sharing" target="_blank" class="port-view-btn">View Full Project →</a>
         </div>
       </div>
 
@@ -588,6 +605,7 @@ footer{background:var(--navy);padding:1.8rem 4rem;display:flex;align-items:cente
             <h3>Engineering Capstone Thesis — Fault Detection System</h3>
             <p>Real 6-member capstone research project at STI West Negros University: a microprocessor-based distribution feeder fault detection, location, and protection system using Arduino Uno, ACS712 current sensors, and GPS-based fault location. I contributed across documentation, data collection, and research alongside my teammates, and we presented our findings together to the academic defense panel.</p>
             <div class="port-meta"><span>Microsoft Word</span><span>5 Chapters</span><span>6-Member Team</span><span>Technical Writing</span></div>
+            <a href="https://drive.google.com/file/d/125VGGQEdmduuA-qFLwfKCV6ZlLL8B0qS/view?usp=sharing" target="_blank" class="port-view-btn">View Full Thesis →</a>
           </div>
         </div>
       </div>
