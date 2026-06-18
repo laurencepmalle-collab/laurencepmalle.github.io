@@ -78,7 +78,8 @@ nav{
 
 .hero-card-wrap{position:relative}
 .hero-profile-card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:var(--radius-lg);padding:2rem;backdrop-filter:blur(4px)}
-.profile-avatar{width:80px;height:80px;border-radius:50%;background:linear-gradient(135deg,var(--gold) 0%,var(--blue2) 100%);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:2rem;font-weight:700;color:var(--white);margin-bottom:1rem}
+.profile-avatar{width:80px;height:80px;border-radius:50%;background:linear-gradient(135deg,var(--gold) 0%,var(--blue2) 100%);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:2rem;font-weight:700;color:var(--white);margin-bottom:1rem;overflow:hidden}
+.profile-avatar img{width:100%;height:100%;object-fit:cover;object-position:center top}
 .profile-name-card{font-family:'Playfair Display',serif;font-size:1.3rem;font-weight:700;color:var(--white);margin-bottom:.2rem}
 .profile-title-card{font-size:.78rem;color:var(--gold2);font-weight:500;margin-bottom:1.2rem;letter-spacing:.04em}
 .profile-contact-list{list-style:none;display:flex;flex-direction:column;gap:.55rem}
@@ -102,6 +103,15 @@ section{padding:5rem 4rem}
 .highlight-card{background:var(--soft);border:1px solid var(--rule);border-left:4px solid var(--gold);border-radius:var(--radius);padding:1rem 1.2rem}
 .highlight-card h4{font-size:.82rem;font-weight:600;color:var(--navy);margin-bottom:.3rem}
 .highlight-card p{font-size:.78rem;color:var(--muted);line-height:1.55}
+
+.why-section{background:var(--navy);padding:3.5rem 4rem}
+.why-inner{max-width:1100px;margin:0 auto}
+.why-title{font-family:'Playfair Display',serif;font-size:1.6rem;font-weight:700;color:var(--white);margin-bottom:1.8rem;text-align:center}
+.why-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:1rem}
+.why-item{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:var(--radius);padding:1.2rem 1rem;text-align:center}
+.why-item-icon{font-size:1.5rem;margin-bottom:.6rem}
+.why-item p{font-size:.78rem;color:rgba(255,255,255,.75);font-weight:500;line-height:1.4}
+@media(max-width:768px){.why-grid{grid-template-columns:1fr 1fr}.why-section{padding:2.5rem 1.5rem}}
 
 .services-section{background:var(--soft)}
 .services-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.2rem}
@@ -302,11 +312,13 @@ footer{background:var(--navy);padding:1.8rem 4rem;display:flex;align-items:cente
     <div>
       <div class="hero-eyebrow"><div class="avail-dot"></div>Available for Remote Work</div>
       <h1 class="hero-name">Laurence P.<br><em>Malle</em></h1>
-      <p class="hero-roles"><strong>Virtual Assistant</strong> · Data Entry Specialist · Bookkeeping Support · <strong>Customer Service</strong></p>
+      <p class="hero-roles" style="font-size:1.1rem;color:rgba(255,255,255,.85);margin-bottom:.5rem">Virtual Assistant Helping Businesses Stay Organized, Accurate, and Efficient</p>
+      <p class="hero-roles"><strong>Data Entry</strong> · Administrative Support · <strong>Bookkeeping Assistance</strong> · Customer Service</p>
       <p class="hero-bio">Detail-oriented and dependable remote professional from Victorias City, Negros Occidental. I help businesses stay organized, accurate, and efficient — from clean data entry and financial record-keeping to responsive customer support and day-to-day administrative assistance.</p>
       <div class="hero-actions">
         <a href="#portfolio" class="btn-primary">View My Work</a>
         <a href="#contact" class="btn-outline">Get in Touch</a>
+        <a href="https://drive.google.com/file/d/1AX2wbT6OBF7wbc9V5J4X9qQavS77saFU/view?usp=sharing" target="_blank" class="btn-outline">📄 Download Resume</a>
       </div>
       <div class="hero-stats">
         <div class="hero-stat"><div class="hero-stat-num">500+</div><div class="hero-stat-lbl">Records Encoded</div></div>
@@ -318,7 +330,7 @@ footer{background:var(--navy);padding:1.8rem 4rem;display:flex;align-items:cente
 
     <div class="hero-card-wrap">
       <div class="hero-profile-card">
-        <div class="profile-avatar">LM</div>
+        <div class="profile-avatar"><img src="headshot.jpg" alt="Laurence P. Malle"></div>
         <div class="profile-name-card">Laurence P. Malle</div>
         <div class="profile-title-card">Virtual Assistant · Data Entry · Bookkeeping · CSR</div>
         <ul class="profile-contact-list">
@@ -348,9 +360,8 @@ footer{background:var(--navy);padding:1.8rem 4rem;display:flex;align-items:cente
     <h2 class="section-title reveal">A Reliable Remote Worker Who Gets Things Done Right</h2>
     <div class="about-grid">
       <div class="about-text reveal">
-        <p>I'm an Electrical Engineering student at STI West Negros University, and I'm actively building a career in virtual assistance, data entry, bookkeeping support, and customer service. My academic background is technical, but I've consistently applied strong organizational, documentation, and communication skills throughout my studies — and I've spent time deliberately closing the gap between that academic experience and professional remote work.</p>
-        <p>I have direct customer service experience from a BPO role handling U.S. accounts, where accuracy and following procedure weren't optional — they were the job. Since then, I've built a growing set of practice projects researched from real common business needs: data entry systems, bookkeeping ledgers, calendar management workflows, and more — each one built the way I'd want a real client deliverable to look.</p>
-        <p>I'm based in Victorias City, Negros Occidental, fully remote-ready, and comfortable working with international clients across different time zones. I take every task seriously, communicate proactively, and don't submit work I'm not confident in.</p>
+        <p>I'm a Virtual Assistant and Administrative Support Professional based in Victorias City, Negros Occidental, building a career in data entry, bookkeeping, and customer service. I have direct customer service experience from a BPO role handling U.S. accounts, where accuracy and procedure weren't optional — they were the job. Since then, I've built a growing set of portfolio projects modeling real business needs: data entry systems, bookkeeping ledgers, calendar workflows, and more. I'm also an Electrical Engineering student at STI West Negros University, which has sharpened my analytical and systematic approach to work.</p>
+        <p>Fully remote-ready and comfortable working with international clients across time zones. I communicate proactively, meet deadlines consistently, and review my work carefully before delivery.</p>
       </div>
       <div class="about-highlights reveal reveal-delay-2">
         <div class="highlight-card">
@@ -370,6 +381,33 @@ footer{background:var(--navy);padding:1.8rem 4rem;display:flex;align-items:cente
           <p>Self-taught CapCut editing for TikTok and YouTube Shorts — 10+ published clips with a combined 20,000+ views.</p>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+
+<section class="why-section">
+  <div class="why-inner">
+    <h2 class="why-title">Why Hire Me?</h2>
+    <div class="why-grid">
+      <div class="why-item"><div class="why-item-icon">⚡</div><p>Fast Learner</p></div>
+      <div class="why-item"><div class="why-item-icon">🎯</div><p>Detail-Oriented</p></div>
+      <div class="why-item"><div class="why-item-icon">✍️</div><p>Strong Written English</p></div>
+      <div class="why-item"><div class="why-item-icon">📞</div><p>Real BPO Customer Service Experience</p></div>
+      <div class="why-item"><div class="why-item-icon">🕐</div><p>Available for Long-Term Remote Work</p></div>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--white);padding:3.5rem 4rem">
+  <div class="section-inner" style="margin-bottom:0">
+    <div class="section-eyebrow reveal" style="text-align:center">Working With Me</div>
+    <h2 class="section-title reveal" style="text-align:center;margin-bottom:2rem">What You Can Expect</h2>
+    <div class="why-grid" style="grid-template-columns:repeat(5,1fr)">
+      <div class="why-item" style="background:var(--soft);border-color:var(--rule)"><div class="why-item-icon">✅</div><p style="color:var(--text)">Accurate Data Entry with Validation Workflows</p></div>
+      <div class="why-item" style="background:var(--soft);border-color:var(--rule)"><div class="why-item-icon">🗂️</div><p style="color:var(--text)">Organized Files &amp; Documentation</p></div>
+      <div class="why-item" style="background:var(--soft);border-color:var(--rule)"><div class="why-item-icon">💬</div><p style="color:var(--text)">Professional Communication</p></div>
+      <div class="why-item" style="background:var(--soft);border-color:var(--rule)"><div class="why-item-icon">🔄</div><p style="color:var(--text)">Consistent Updates &amp; Responsiveness</p></div>
+      <div class="why-item" style="background:var(--soft);border-color:var(--rule)"><div class="why-item-icon">⏰</div><p style="color:var(--text)">Reliable Deadline Management</p></div>
     </div>
   </div>
 </section>
@@ -569,26 +607,6 @@ footer{background:var(--navy);padding:1.8rem 4rem;display:flex;align-items:cente
       </div>
 
       <div class="portfolio-card reveal">
-        <div class="port-thumb upwork"><span class="port-thumb-label practice">Practice Project</span>💵</div>
-        <div class="port-body">
-          <h3>Freelance Earnings Tracker</h3>
-          <p>A sample freelance income tracker modeled on common freelancer needs — tracking client, project, hours, rate, and payment status in one organized sheet.</p>
-          <div class="port-meta"><span>Excel</span><span>Client Tracking</span><span>Payment Status</span></div>
-          <a href="https://drive.google.com/file/d/1afAWhGCZ07irhZCedCMJKvOzXmrcTJXB/view?usp=sharing" target="_blank" class="port-view-btn">View Full Project →</a>
-        </div>
-      </div>
-
-      <div class="portfolio-card reveal reveal-delay-1">
-        <div class="port-thumb netflix"><span class="port-thumb-label practice">Practice Project</span>🎬</div>
-        <div class="port-body">
-          <h3>Netflix Subscription Tracker</h3>
-          <p>Researched common subscription management challenges, then built a sample tracking system for monitoring subscription status, renewal dates, shared accounts, and payment tracking.</p>
-          <div class="port-meta"><span>Excel / Sheets</span><span>Subscription Tracking</span><span>Renewal Dates</span></div>
-          <a href="https://drive.google.com/file/d/1GD3dHKB6benSyMyU24xu-zPbWY6C_0IY/view?usp=sharing" target="_blank" class="port-view-btn">View Full Project →</a>
-        </div>
-      </div>
-
-      <div class="portfolio-card reveal">
         <div class="port-thumb shopify"><span class="port-thumb-label practice">Practice Project</span>🛍️</div>
         <div class="port-body">
           <h3>Shopify P&amp;L Report</h3>
@@ -610,6 +628,32 @@ footer{background:var(--navy);padding:1.8rem 4rem;display:flex;align-items:cente
         </div>
       </div>
 
+    </div>
+
+    <div style="text-align:center;margin-top:1.5rem">
+      <button onclick="toggleMoreSamples()" id="moreSamplesBtn" style="background:var(--white);border:1px solid var(--rule);border-radius:8px;padding:.6rem 1.4rem;font-size:.82rem;font-weight:600;color:var(--blue);cursor:pointer;font-family:'DM Sans',sans-serif">+ Show 2 More Samples</button>
+    </div>
+
+    <div class="portfolio-grid" id="moreSamples" style="display:none;margin-top:1.5rem">
+      <div class="portfolio-card reveal">
+        <div class="port-thumb upwork"><span class="port-thumb-label practice">Practice Project</span>💵</div>
+        <div class="port-body">
+          <h3>Freelance Earnings Tracker</h3>
+          <p>A sample freelance income tracker modeled on common freelancer needs — tracking client, project, hours, rate, and payment status in one organized sheet.</p>
+          <div class="port-meta"><span>Excel</span><span>Client Tracking</span><span>Payment Status</span></div>
+          <a href="https://drive.google.com/file/d/1afAWhGCZ07irhZCedCMJKvOzXmrcTJXB/view?usp=sharing" target="_blank" class="port-view-btn">View Full Project →</a>
+        </div>
+      </div>
+
+      <div class="portfolio-card reveal reveal-delay-1">
+        <div class="port-thumb netflix"><span class="port-thumb-label practice">Practice Project</span>🎬</div>
+        <div class="port-body">
+          <h3>Netflix Subscription Tracker</h3>
+          <p>Researched common subscription management challenges, then built a sample tracking system for monitoring subscription status, renewal dates, shared accounts, and payment tracking.</p>
+          <div class="port-meta"><span>Excel / Sheets</span><span>Subscription Tracking</span><span>Renewal Dates</span></div>
+          <a href="https://drive.google.com/file/d/1GD3dHKB6benSyMyU24xu-zPbWY6C_0IY/view?usp=sharing" target="_blank" class="port-view-btn">View Full Project →</a>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -691,27 +735,27 @@ footer{background:var(--navy);padding:1.8rem 4rem;display:flex;align-items:cente
     <div class="training-grid">
       <div class="training-card reveal">
         <div class="training-icon-wrap">📊</div>
-        <div class="training-text"><h4>Data Entry &amp; Spreadsheet Management</h4><p>Data encoding best practices, spreadsheet organization, formula usage, and error-checking workflows for Excel and Google Sheets.</p><span class="training-badge">Self-Study + Portfolio</span></div>
+        <div class="training-text"><h4>Data Entry &amp; Spreadsheets</h4><p>Encoding, formulas, and error-checking for Excel &amp; Sheets.</p><span class="training-badge">Self-Study + Portfolio</span></div>
       </div>
       <div class="training-card reveal reveal-delay-1">
         <div class="training-icon-wrap">💬</div>
-        <div class="training-text"><h4>Customer Service Fundamentals</h4><p>Active listening, professional email/chat etiquette, and complaint resolution — reinforced through real BPO experience.</p><span class="training-badge">Applied On the Job</span></div>
+        <div class="training-text"><h4>Customer Service Fundamentals</h4><p>Active listening, email/chat etiquette, complaint resolution.</p><span class="training-badge">Applied On the Job</span></div>
       </div>
       <div class="training-card reveal">
         <div class="training-icon-wrap">🤝</div>
-        <div class="training-text"><h4>Virtual Assistant Core Skills</h4><p>Email inbox management, Google Workspace workflows, calendar coordination, and file organization systems.</p><span class="training-badge">Applied in Projects</span></div>
+        <div class="training-text"><h4>Virtual Assistant Core Skills</h4><p>Inbox management, Google Workspace, calendar coordination.</p><span class="training-badge">Applied in Projects</span></div>
       </div>
       <div class="training-card reveal reveal-delay-1">
         <div class="training-icon-wrap">📒</div>
-        <div class="training-text"><h4>Basic Bookkeeping &amp; Financial Records</h4><p>Transaction classification, expense categorization, and income-expense reporting for small business contexts.</p><span class="training-badge">Self-Study + Portfolio</span></div>
+        <div class="training-text"><h4>Basic Bookkeeping</h4><p>Transaction classification, expense categorization, reporting.</p><span class="training-badge">Self-Study + Portfolio</span></div>
       </div>
       <div class="training-card reveal">
         <div class="training-icon-wrap">🎬</div>
-        <div class="training-text"><h4>Short-Form Video Editing</h4><p>CapCut editing for TikTok and YouTube Shorts — cuts, captions, pacing, and trims, applied to 10+ published clips.</p><span class="training-badge">Self-Taught + Published Work</span></div>
+        <div class="training-text"><h4>Short-Form Video Editing</h4><p>CapCut for TikTok &amp; Shorts — 10+ published clips.</p><span class="training-badge">Self-Taught + Published</span></div>
       </div>
       <div class="training-card reveal reveal-delay-1">
         <div class="training-icon-wrap">🤖</div>
-        <div class="training-text"><h4>AI Tools for Productivity</h4><p>Using Claude and ChatGPT for research, drafting, and organizing work efficiently — a growing part of remote work today.</p><span class="training-badge">Applied Daily</span></div>
+        <div class="training-text"><h4>AI Tools for Productivity</h4><p>Claude &amp; ChatGPT for research, drafting, and organizing.</p><span class="training-badge">Applied Daily</span></div>
       </div>
     </div>
   </div>
@@ -835,6 +879,14 @@ window.addEventListener('scroll', () => {
 
 function openMobileNav(){ document.getElementById('mobileNav').classList.add('open'); }
 function closeMobileNav(){ document.getElementById('mobileNav').classList.remove('open'); }
+
+function toggleMoreSamples(){
+  const el = document.getElementById('moreSamples');
+  const btn = document.getElementById('moreSamplesBtn');
+  const isHidden = el.style.display === 'none';
+  el.style.display = isHidden ? 'grid' : 'none';
+  btn.textContent = isHidden ? '− Show Fewer Samples' : '+ Show 2 More Samples';
+}
 </script>
 </body>
 </html>
